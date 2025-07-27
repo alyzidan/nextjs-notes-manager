@@ -136,7 +136,7 @@ export default function ThemeToggle() {
           <div
             className={`
             absolute -bottom-1 -right-1 w-3 h-3 rounded-full
-            transition-all duration-300
+            transition-all duration-250
             ${resolvedTheme === "dark" ? "bg-purple-400" : "bg-indigo-500"}
           `}
           />
