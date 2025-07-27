@@ -1,0 +1,4 @@
+.note {
+  @apply bg-white rounded-xl border-l-4 border-indigo-500 shadow-md overflow-hidden max-w-md;
+}
+/* 
