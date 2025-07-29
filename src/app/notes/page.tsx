@@ -12,8 +12,7 @@ export const dynamic = "auto",
   dynamicParams = true,
   revalidate = 0,
   fetchCache = "auto",
-  runtime = "nodejs",
-  prefetchCache = "auto";
+  runtime = "nodejs";
 
 async function getNotes(): Promise<INote[]> {
   const db = new PocketBase("http://127.0.0.1:8090");

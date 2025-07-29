@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  nextjs-app:
+    image: yourdockerhubuser/nextjs-app:latest
+    container_name: nextjs-app
+    ports:
+      - "3000:3000"
+    restart: always
+    volumes:
+      - pb_data:/app/pb_data
+      - pb_migrations:/app/pb_migrations
+    environment:
+      NODE_ENV: production
+
+volumes:
+  pb_data:
+  pb_migrations:

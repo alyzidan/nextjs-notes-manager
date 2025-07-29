@@ -54,7 +54,9 @@ export default function CreateNote() {
       setTimeout(() => setSubmitSuccess(false), 3000);
     } catch (err) {
       console.error("Error creating note:", err);
-      setSubmitError(err.message || "Failed to create note. Please try again.");
+      setSubmitError(
+        (err as Error).message || "Failed to create note. Please try again."
+      );
     } finally {
       setIsSubmitting(false);
       router.refresh();
